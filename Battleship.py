@@ -1,6 +1,3 @@
-Python 2.7.4 (default, Apr  6 2013, 19:54:46) [MSC v.1500 32 bit (Intel)] on win32
-Type "copyright", "credits" or "license()" for more information.
->>> 
 from random import randint
 
 board = []
@@ -39,7 +36,7 @@ for turn in range(0,4):
         print "You missed my battleship!"
         board[int(guess_row)][int(guess_col)] = "X"
         print_board(board)
-        if turn == 3:
+        if turn == 10:
             print "Game Over"
             
 print ship_row
