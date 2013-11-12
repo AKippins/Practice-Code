@@ -11,6 +11,7 @@ def print_board(board):
 
         
 print_board(board)
+print("\n")
 
 def random_row(board):
     return randint(0, len(board) - 1)
@@ -22,22 +23,21 @@ ship_row = random_row(board)
 ship_col = random_col(board)
 
 
-for turn in range(0,4):
-    print turn + 1
-    guess_row = input("Guess Row:")
-    guess_col = input("Guess Col:")
+for turn in range(0,14):
+    print "Turn Number: " + str(turn + 1)
+    guess_row = input("Guess Row:") - 1
+    guess_col = input("Guess Col:") - 1
     if ship_row == guess_row and ship_col == guess_col:
-        print "Congratulations! You sank my battleship!"
-    elif guess_row < 4 or guess_col <4:
-        print "Oops, that's not even in the ocean."
+        print "Congratulations! You sank my battleship!" + "\n"
+        exit()
+    elif guess_row > 4 or guess_col > 4:
+        print "Oops, that's not even in the ocean." + "\n"
     elif board[int(guess_row)][int(guess_col)] == "X":
-        print "You guessed that one already."
+        print "You guessed that one already." + "\n"
     else:
-        print "You missed my battleship!"
         board[int(guess_row)][int(guess_col)] = "X"
         print_board(board)
-        if turn == 10:
-            print "Game Over"
-            
-print ship_row
-print ship_col
+        print "You missed my battleship!" + "\n" 
+    if turn == 13:
+        print "Game Over, You Were Blown To Smitherienes!!!"
+        
