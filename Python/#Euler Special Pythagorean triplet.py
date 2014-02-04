@@ -1,0 +1,1 @@
+#Euler Special Pythagorean triplet
