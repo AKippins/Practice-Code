@@ -129,7 +129,7 @@ if(window.location == 'https://ssb.banner.marist.edu/PROD11G/bwpkteci.P_UpdateTi
         document.getElementsByName('TimeIn')[0].value = '09:00'; //Enter time in the format XX:XX within the '' after value
         document.getElementsByName('TimeInAm')[0].value = 'AM';  //Enter either AM or PM within the '' after value
         document.getElementsByName('TS_TimeOut')[0].value = '11:00'; //Enter time in the format XX:XX within the '' after value
-        document.getElementsByName('TimeOutAm')[0].value = 'PM'; //Enter either AM or PM within the '' after value
+        document.getElementsByName('TimeOutAm')[0].value = 'AM'; //Enter either AM or PM within the '' after value
 
         //Second Time Slot
         document.getElementsByName('TimeIn')[1].value = '12:30'; //Enter time in the format XX:XX within the '' after value
@@ -159,16 +159,16 @@ if(window.location == 'https://ssb.banner.marist.edu/PROD11G/bwpkteci.P_UpdateTi
     }
     if (window.find('Friday,')){
         //First Time Slot
-        document.getElementsByName('TimeIn')[0].value = '09:30'; //Enter time in the format XX:XX within the '' after value
-        document.getElementsByName('TimeInAm')[0].value = 'AM';  //Enter either AM or PM within the '' after value
-        document.getElementsByName('TS_TimeOut')[0].value = '12:30'; //Enter time in the format XX:XX within the '' after value
-        document.getElementsByName('TimeOutAm')[0].value = 'PM'; //Enter either AM or PM within the '' after value
+        document.getElementsByName('TimeIn')[0].value = ''; //Enter time in the format XX:XX within the '' after value
+        document.getElementsByName('TimeInAm')[0].value = '';  //Enter either AM or PM within the '' after value
+        document.getElementsByName('TS_TimeOut')[0].value = ''; //Enter time in the format XX:XX within the '' after value
+        document.getElementsByName('TimeOutAm')[0].value = ''; //Enter either AM or PM within the '' after value
 
         //Second Time Slot
-        document.getElementsByName('TimeIn')[1].value = '01:00'; //Enter time in the format XX:XX within the '' after value
-        document.getElementsByName('TimeInAm')[1].value = 'PM'; //Enter either AM or PM within the '' after value
-        document.getElementsByName('TS_TimeOut')[1].value = '06:00'; //Enter time in the format XX:XX within the '' after value
-        document.getElementsByName('TimeOutAm')[1].value = 'PM'; //Enter either AM or PM within the '' after value
+        document.getElementsByName('TimeIn')[1].value = ''; //Enter time in the format XX:XX within the '' after value
+        document.getElementsByName('TimeInAm')[1].value = ''; //Enter either AM or PM within the '' after value
+        document.getElementsByName('TS_TimeOut')[1].value = ''; //Enter time in the format XX:XX within the '' after value
+        document.getElementsByName('TimeOutAm')[1].value = ''; //Enter either AM or PM within the '' after value
 
         //Third Time Slot
         document.getElementsByName('TimeIn')[2].value = ''; //Enter time in the format XX:XX within the '' after value
