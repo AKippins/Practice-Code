@@ -1,27 +1,25 @@
-import time
+import time, math
 start_time = time.time()
-runtime = time.time() - start_time
-x = 1;
-summ = 0;
+x = 2;
+summ = 5;
+primes=[]
+primes.append(2);
+primes.append(3);
+max = 2000000
 
-while x <= 2000000:
-    y = 1;
-    z = 0;
-    
-    while x >= y:    
-        if x % y == 0:
-            z += 1;
-            if z > 2:
-                #print str(x) + " was skipped";
+while x <= max:
+    for y in range(2,int(math.sqrt(x)+1)):
+        if (x % y) == 0:
+            break
+        else:
+            if x == 9:
                 break;
-        
-        y += 1;
-            
-    if z == 2:
-        #print str(x) + " is prime";
-        summ += x;
-    
+            print str(x) + " is prime";
+            primes.append(x);
+            summ += x;
+            print "The current sum is: " + str(summ) 
     x += 1;
             
-print summ;
-print runtime;
+print "The sum of the primes under " + str(max) + " is " + str(summ);
+print primes;
+print time.time() - start_time;

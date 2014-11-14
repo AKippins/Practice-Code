@@ -1,1 +1,0 @@
-#Euler Even Fibonacci numbers
